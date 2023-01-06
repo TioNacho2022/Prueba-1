@@ -1,0 +1,29 @@
+
+
+<ion-content>
+  <div id="titulo">
+    <h1>PRUEBA UNO</h1>
+    <p>Aqui comienza todo</p>
+  </div>
+
+  <h3>Bienvenido</h3>
+
+
+  <div id="form">
+    <ion-item>
+      <ion-label position="floating">Usuario</ion-label>
+      <ion-input minlength="3" maxlength="8"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password"  minlength="4"></ion-input>
+    </ion-item>
+    <ion-button expand="full" color="dark" [routerLink]="['/inicio']">Ingresar</ion-button>
+
+
+    <p id="crea"  [routerLink]="['/registro']">Crea una cuenta gratis</p>
+    <br>
+    <p id="olvido"[routerLink]="['/olvido-password']">¿Olvido la contraseña?</p>
+  </div>
+
+</ion-content>

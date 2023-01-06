@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>PRUEBA UNO</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button text="atras"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <h3>Catálogo de productos</h3>
+  <ion-list>
+    <ion-item detail="true" *ngFor="let p of productos" [routerLink]="['/detalle',p.title]" [queryParams]="{precio:p.price,descripcion:p.description,id:p.id}" [state]="{images: p.images}">
+      <ion-avatar slot="start">
+        <img alt="Silhouette of a person's head" [src]="p.images[0]" />
+      </ion-avatar>
+      <div style="display: flex;flex-direction: column;">
+        <ion-label>
+          {{p.title}}
+        </ion-label>
+        <ion-label>
+          precio: $ {{p.price}}
+        </ion-label>
+      </div>
+
+
+    </ion-item>
+  </ion-list>
+
+</ion-content>

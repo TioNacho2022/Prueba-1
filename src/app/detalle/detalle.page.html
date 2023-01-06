@@ -1,0 +1,42 @@
+
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{titulo}}</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button text="atras"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-slides>
+      <ion-slide>
+        <div class="slide">
+          <img [src]="imagenes.images[0]">
+        </div>
+      </ion-slide>
+
+      <ion-slide>
+        <img [src]="imagenes.images[1]" />
+      </ion-slide>
+
+      <ion-slide>
+        <img [src]="imagenes.images[2]" />
+      </ion-slide>
+
+    </ion-slides>
+    <ion-card-header>
+      <ion-card-title>{{titulo}}</ion-card-title>
+      <ion-card-subtitle>$ {{precio}}</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-label>
+        {{descripcion}}
+      </ion-label>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

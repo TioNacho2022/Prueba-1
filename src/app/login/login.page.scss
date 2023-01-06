@@ -1,0 +1,36 @@
+ion-content{
+  color: white;
+  --background: var(--ion-background-color, rgb(0, 0, 0));
+  text-align: center;
+
+  p{
+    font-size: 13px;
+  }
+
+  #titulo{
+    color: white;
+    margin-top: 45px;
+  }
+
+  h3{
+    color: white;
+  }
+
+  #form{
+
+    padding: 20px;
+  }
+  #crea{
+    font-size: 15px;
+    color: rgba(15, 15, 209, 0.767);
+  }
+
+  #olvido{
+    color: rgb(179, 45, 45);
+  }
+  ion-button{
+    padding-top: 10px;
+  }
+
+
+}

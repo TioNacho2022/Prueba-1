@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>PRUEBA UNO</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button text="atras"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div>
+    <h1>Nueva Cuenta</h1>
+    <p>Completa los campos</p>
+  </div>
+
+  <form action="">
+    <ion-item>
+      <ion-label position="stacked">Usuario</ion-label>
+      <ion-input placeholder="Ingresa tu nick"  minlength="3" maxlength="8"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Correo</ion-label>
+      <ion-input placeholder="Ingresa tu email" type="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Seleccione tu carrera</ion-label>
+      <ion-select okText="Choose Fruit" cancelText="Cancel Choice">
+        <ion-select-option value="apples">Cocina</ion-select-option>
+        <ion-select-option value="oranges">Informatica</ion-select-option>
+        <ion-select-option value="bananas">Redes</ion-select-option>
+        <ion-select-option value="bananas">Administracion</ion-select-option>
+        <ion-select-option value="bananas">Otra</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Contraseña</ion-label>
+      <ion-input placeholder="Ingresa tu contraseña" type="password" minlength="4"></ion-input>
+    </ion-item>
+    <div>
+      <ion-button id="boton-1" (click)="mensaje()">Registrar</ion-button>
+      <ion-button id="boton-2" type="reset">Limpiar</ion-button>
+    </div>
+  </form>
+</ion-content>
